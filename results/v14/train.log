@@ -1,0 +1,244 @@
+I: Initializing Version 2.74.0-release.7316+gl.ec99a64b
+I: Client ID: 9ESY3571
+I: ThreadId(02) hub_client::client::Client::new Launching client mode=Shared with_cleaner=false cache_path=None cache_size=None
+I: ThreadId(03) launch self=Launcher { discovery_lock: RwLock { lock: RwLock { inner: File { fd: 51, path: "/tmp/hub-andy.lock", read: false, write: true } } }, mode: Shared, with_cleaner: false, config_file: "/tmp/hub-andy-48E04DFC.config.json" } cmd="hub" "--mode=shared" "--write-config" "/tmp/hub-andy-48E04DFC.config.json" "--"
+I: Not using Hub: Hub not found
+I: Successfully created S3 provider for https://omniverse-content-production.s3-us-west-2.amazonaws.com
+I: Using CloudFront http://dcb18d6mfegct.cloudfront.net/, List = No
+[WARNING]: Serving remote assets from the local cache under '/tmp'. Each copy is checked against the server before use; delete the directory to force a full re-download.
+[INFO]: Loading local copy of remote asset 'https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/Environments/Grid/default_ground_plane_checker_v1/default_ground_plane.usda' from '/tmp/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/Environments/Grid/default_ground_plane_checker_v1/default_ground_plane.usda'.
+[INFO]: Loading local copy of remote asset 'https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/Environments/Grid/default_ground_plane_checker_v1/Materials/Textures/default_ground_plane_albedo.png' from '/tmp/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/Environments/Grid/default_ground_plane_checker_v1/Materials/Textures/default_ground_plane_albedo.png'.
+[INFO]: Loading local copy of remote asset 'https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/Environments/Grid/default_ground_plane_checker_v1/Materials/Textures/default_ground_plane_roughness.png' from '/tmp/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/Environments/Grid/default_ground_plane_checker_v1/Materials/Textures/default_ground_plane_roughness.png'.
+[INFO]: Registered backend 'newton' for factory Articulation.
+[INFO]: Setting variant selection 'mujoco' for variant set 'Physics' on prim '/World/envs/env_0/Robot'.
+<WORKDIR>/IsaacLab/source/isaaclab_newton/isaaclab_newton/cloner/newton_clone_utils.py:138: FutureWarning: Newton shape color replacement is enabled; this workaround will be deprecated in a future release.
+  replace_newton_builder_shape_colors(builder, stage)
+<WORKDIR>/IsaacLab/source/isaaclab_newton/isaaclab_newton/cloner/newton_clone_utils.py:138: FutureWarning: Newton shape color replacement is enabled; this workaround will be deprecated in a future release.
+  replace_newton_builder_shape_colors(builder, stage)
+[INFO]: Dispatching MODEL_INIT callbacks
+[INFO]: Finalizing model on device: cuda:0
+Finalize builder took: Last: 2.011507 s, Mean: 2.011507 s, Std: 0.000000 s, N: 1
+[INFO]: Dispatching PHYSICS_READY callbacks
+[INFO]: Simulation parameters for joints in /World/envs/env_[^/]+/Robot:
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|                                   Simulation Joint Information (Prim path: /World/envs/env_[^/]+/Robot)                                   |
++-------+----------------------------+-----------+---------+----------+-----------------+-----------------+-----------------+---------------+
+| Index | Name                       | Stiffness | Damping | Armature | Static Friction | Position Limits | Velocity Limits | Effort Limits |
++-------+----------------------------+-----------+---------+----------+-----------------+-----------------+-----------------+---------------+
+|   0   | left_hip_pitch_joint       |   40.179  |  2.558  |  0.010   |      0.000      | [-2.531, 2.880] |      32.000     |     88.000    |
+|   1   | left_hip_roll_joint        |   99.098  |  6.309  |  0.025   |      0.000      | [-0.524, 2.967] |      20.000     |    139.000    |
+|   2   | left_hip_yaw_joint         |   40.179  |  2.558  |  0.010   |      0.000      | [-2.758, 2.758] |      32.000     |     88.000    |
+|   3   | left_knee_joint            |   99.098  |  6.309  |  0.025   |      0.000      | [-0.087, 2.880] |      20.000     |    139.000    |
+|   4   | left_ankle_pitch_joint     |   28.501  |  1.814  |  0.007   |      0.000      | [-0.873, 0.524] |      37.000     |     50.000    |
+|   5   | left_ankle_roll_joint      |   28.501  |  1.814  |  0.007   |      0.000      | [-0.262, 0.262] |      37.000     |     50.000    |
+|   6   | right_hip_pitch_joint      |   40.179  |  2.558  |  0.010   |      0.000      | [-2.531, 2.880] |      32.000     |     88.000    |
+|   7   | right_hip_roll_joint       |   99.098  |  6.309  |  0.025   |      0.000      | [-2.967, 0.524] |      20.000     |    139.000    |
+|   8   | right_hip_yaw_joint        |   40.179  |  2.558  |  0.010   |      0.000      | [-2.758, 2.758] |      32.000     |     88.000    |
+|   9   | right_knee_joint           |   99.098  |  6.309  |  0.025   |      0.000      | [-0.087, 2.880] |      20.000     |    139.000    |
+|   10  | right_ankle_pitch_joint    |   28.501  |  1.814  |  0.007   |      0.000      | [-0.873, 0.524] |      37.000     |     50.000    |
+|   11  | right_ankle_roll_joint     |   28.501  |  1.814  |  0.007   |      0.000      | [-0.262, 0.262] |      37.000     |     50.000    |
+|   12  | waist_yaw_joint            |   40.179  |  2.558  |  0.010   |      0.000      | [-2.618, 2.618] |      32.000     |     88.000    |
+|   13  | waist_roll_joint           |   28.501  |  1.814  |  0.007   |      0.000      | [-0.520, 0.520] |      37.000     |     50.000    |
+|   14  | waist_pitch_joint          |   28.501  |  1.814  |  0.007   |      0.000      | [-0.520, 0.520] |      37.000     |     50.000    |
+|   15  | left_shoulder_pitch_joint  |   14.251  |  0.907  |  0.004   |      0.000      | [-3.089, 2.670] |      37.000     |     25.000    |
+|   16  | left_shoulder_roll_joint   |   14.251  |  0.907  |  0.004   |      0.000      | [-1.588, 2.252] |      37.000     |     25.000    |
+|   17  | left_shoulder_yaw_joint    |   14.251  |  0.907  |  0.004   |      0.000      | [-2.618, 2.618] |      37.000     |     25.000    |
+|   18  | left_elbow_joint           |   14.251  |  0.907  |  0.004   |      0.000      | [-1.047, 2.094] |      37.000     |     25.000    |
+|   19  | left_wrist_roll_joint      |   14.251  |  0.907  |  0.004   |      0.000      | [-1.972, 1.972] |      37.000     |     25.000    |
+|   20  | left_wrist_pitch_joint     |   16.778  |  1.068  |  0.004   |      0.000      | [-1.614, 1.614] |      22.000     |     5.000     |
+|   21  | left_wrist_yaw_joint       |   16.778  |  1.068  |  0.004   |      0.000      | [-1.614, 1.614] |      22.000     |     5.000     |
+|   22  | right_shoulder_pitch_joint |   14.251  |  0.907  |  0.004   |      0.000      | [-3.089, 2.670] |      37.000     |     25.000    |
+|   23  | right_shoulder_roll_joint  |   14.251  |  0.907  |  0.004   |      0.000      | [-2.252, 1.588] |      37.000     |     25.000    |
+|   24  | right_shoulder_yaw_joint   |   14.251  |  0.907  |  0.004   |      0.000      | [-2.618, 2.618] |      37.000     |     25.000    |
+|   25  | right_elbow_joint          |   14.251  |  0.907  |  0.004   |      0.000      | [-1.047, 2.094] |      37.000     |     25.000    |
+|   26  | right_wrist_roll_joint     |   14.251  |  0.907  |  0.004   |      0.000      | [-1.972, 1.972] |      37.000     |     25.000    |
+|   27  | right_wrist_pitch_joint    |   16.778  |  1.068  |  0.004   |      0.000      | [-1.614, 1.614] |      22.000     |     5.000     |
+|   28  | right_wrist_yaw_joint      |   16.778  |  1.068  |  0.004   |      0.000      | [-1.614, 1.614] |      22.000     |     5.000     |
++-------+----------------------------+-----------+---------+----------+-----------------+-----------------+-----------------+---------------+
+Initialize solver took: Last: 2.855354 s, Mean: 2.855354 s, Std: 0.000000 s, N: 1
+<WORKDIR>/reference/supermimic/env.py:83: UserWarning: In Newton, body com pose always has unit quaternion. Consider using body_com_pos_b instead.Querying this property requires appending a unit quaternion to the position which is expensive.
+  default_com = self.robot.data.body_com_pose_b.torch[:, self.torso_id, :3].clone()
+CUDA graph took: Last: 0.733099 s, Mean: 0.733099 s, Std: 0.000000 s, N: 1
+it 50 | 0.005 h | wm 0.5315 e8 0.9273 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.428 ep_len 27.1 ep_ret 0.417 term 0.86 | 2.77 it/s
+it 100 | 0.009 h | wm 0.1808 e8 0.3023 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.407 ep_len 28.6 ep_ret 0.393 term 0.88 | 3.23 it/s
+it 150 | 0.014 h | wm 0.1357 e8 0.2279 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.408 ep_len 28.5 ep_ret 0.394 term 0.88 | 3.30 it/s
+it 200 | 0.018 h | wm 0.1117 e8 0.1859 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.407 ep_len 28.3 ep_ret 0.390 term 0.89 | 3.28 it/s
+it 250 | 0.022 h | wm 0.0954 e8 0.1601 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.406 ep_len 28.2 ep_ret 0.390 term 0.89 | 3.25 it/s
+it 300 | 0.026 h | wm 0.0868 e8 0.1478 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.404 ep_len 28.3 ep_ret 0.390 term 0.89 | 3.21 it/s
+it 350 | 0.031 h | wm 0.0786 e8 0.1317 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.403 ep_len 28.5 ep_ret 0.388 term 0.89 | 3.11 it/s
+it 400 | 0.035 h | wm 0.0722 e8 0.1211 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.400 ep_len 28.2 ep_ret 0.384 term 0.89 | 3.27 it/s
+it 450 | 0.040 h | wm 0.0674 e8 0.1141 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.404 ep_len 28.2 ep_ret 0.385 term 0.89 | 3.07 it/s
+it 500 | 0.044 h | wm 0.0636 e8 0.1054 | pi 0.000 v 0.0000 imag_r 0.000 surv 0.000 | sim_r 0.401 ep_len 28.2 ep_ret 0.385 term 0.89 | 3.22 it/s
+POLICY_BUDGET_START
+it 550 | 0.054 h | wm 0.0675 e8 0.1197 | pi -0.631 v 0.0236 imag_r 0.190 surv 0.198 | sim_r 0.395 ep_len 28.9 ep_ret 0.378 term 0.89 | 1.31 it/s
+it 600 | 0.063 h | wm 0.0810 e8 0.1490 | pi -0.741 v 0.0271 imag_r 0.200 surv 0.259 | sim_r 0.408 ep_len 30.7 ep_ret 0.378 term 0.87 | 1.55 it/s
+it 650 | 0.072 h | wm 0.0916 e8 0.1701 | pi -0.926 v 0.0506 imag_r 0.200 surv 0.313 | sim_r 0.382 ep_len 34.3 ep_ret 0.356 term 0.85 | 1.56 it/s
+it 700 | 0.081 h | wm 0.1035 e8 0.1928 | pi -1.330 v 0.0560 imag_r 0.191 surv 0.376 | sim_r 0.351 ep_len 39.7 ep_ret 0.330 term 0.79 | 1.56 it/s
+it 750 | 0.090 h | wm 0.1114 e8 0.2082 | pi -1.851 v 0.0429 imag_r 0.202 surv 0.480 | sim_r 0.360 ep_len 49.2 ep_ret 0.323 term 0.68 | 1.52 it/s
+it 800 | 0.099 h | wm 0.1163 e8 0.2126 | pi -2.508 v 0.0401 imag_r 0.243 surv 0.543 | sim_r 0.455 ep_len 49.1 ep_ret 0.365 term 0.67 | 1.54 it/s
+it 850 | 0.108 h | wm 0.1167 e8 0.2110 | pi -3.025 v 0.0402 imag_r 0.267 surv 0.582 | sim_r 0.483 ep_len 53.0 ep_ret 0.392 term 0.65 | 1.55 it/s
+it 900 | 0.117 h | wm 0.1376 e8 0.2470 | pi -3.438 v 0.0447 imag_r 0.313 surv 0.602 | sim_r 0.523 ep_len 52.4 ep_ret 0.403 term 0.65 | 1.56 it/s
+it 950 | 0.127 h | wm 0.1443 e8 0.2587 | pi -4.010 v 0.0413 imag_r 0.368 surv 0.636 | sim_r 0.557 ep_len 54.5 ep_ret 0.437 term 0.64 | 1.49 it/s
+it 1000 | 0.135 h | wm 0.1452 e8 0.2584 | pi -4.559 v 0.0398 imag_r 0.419 surv 0.663 | sim_r 0.588 ep_len 59.9 ep_ret 0.467 term 0.60 | 1.56 it/s
+it 1050 | 0.144 h | wm 0.1438 e8 0.2545 | pi -5.012 v 0.0340 imag_r 0.466 surv 0.683 | sim_r 0.615 ep_len 61.9 ep_ret 0.480 term 0.61 | 1.54 it/s
+it 1100 | 0.153 h | wm 0.1434 e8 0.2517 | pi -5.369 v 0.0364 imag_r 0.505 surv 0.703 | sim_r 0.632 ep_len 64.0 ep_ret 0.487 term 0.60 | 1.55 it/s
+it 1150 | 0.162 h | wm 0.1443 e8 0.2562 | pi -5.490 v 0.0412 imag_r 0.525 surv 0.714 | sim_r 0.621 ep_len 64.7 ep_ret 0.487 term 0.60 | 1.55 it/s
+it 1200 | 0.171 h | wm 0.1473 e8 0.2610 | pi -5.700 v 0.0406 imag_r 0.545 surv 0.726 | sim_r 0.633 ep_len 65.9 ep_ret 0.497 term 0.59 | 1.54 it/s
+it 1250 | 0.180 h | wm 0.1537 e8 0.2723 | pi -5.784 v 0.0371 imag_r 0.563 surv 0.736 | sim_r 0.633 ep_len 67.6 ep_ret 0.494 term 0.59 | 1.57 it/s
+it 1300 | 0.189 h | wm 0.1493 e8 0.2640 | pi -5.874 v 0.0355 imag_r 0.577 surv 0.749 | sim_r 0.646 ep_len 70.7 ep_ret 0.526 term 0.57 | 1.60 it/s
+it 1350 | 0.198 h | wm 0.1499 e8 0.2647 | pi -6.089 v 0.0392 imag_r 0.589 surv 0.770 | sim_r 0.655 ep_len 75.9 ep_ret 0.535 term 0.54 | 1.55 it/s
+it 1400 | 0.207 h | wm 0.1803 e8 0.3137 | pi -6.094 v 0.0792 imag_r 0.546 surv 0.808 | sim_r 0.560 ep_len 80.0 ep_ret 0.392 term 0.54 | 1.59 it/s
+it 1450 | 0.215 h | wm 0.2317 e8 0.3925 | pi -6.148 v 0.1004 imag_r 0.531 surv 0.834 | sim_r 0.519 ep_len 82.5 ep_ret 0.357 term 0.56 | 1.59 it/s
+it 1500 | 0.224 h | wm 0.2591 e8 0.4364 | pi -6.233 v 0.1158 imag_r 0.518 surv 0.833 | sim_r 0.495 ep_len 73.8 ep_ret 0.303 term 0.60 | 1.60 it/s
+it 1550 | 0.233 h | wm 0.2543 e8 0.4269 | pi -6.348 v 0.1282 imag_r 0.513 surv 0.853 | sim_r 0.517 ep_len 83.6 ep_ret 0.352 term 0.54 | 1.58 it/s
+it 1600 | 0.242 h | wm 0.2560 e8 0.4307 | pi -6.373 v 0.1219 imag_r 0.504 surv 0.868 | sim_r 0.517 ep_len 105.6 ep_ret 0.449 term 0.40 | 1.60 it/s
+it 1650 | 0.250 h | wm 0.2557 e8 0.4261 | pi -6.584 v 0.1222 imag_r 0.508 surv 0.889 | sim_r 0.537 ep_len 122.8 ep_ret 0.468 term 0.35 | 1.60 it/s
+it 1700 | 0.259 h | wm 0.2464 e8 0.4094 | pi -6.714 v 0.1183 imag_r 0.514 surv 0.907 | sim_r 0.559 ep_len 139.3 ep_ret 0.497 term 0.32 | 1.60 it/s
+it 1750 | 0.268 h | wm 0.2347 e8 0.3876 | pi -6.873 v 0.0919 imag_r 0.518 surv 0.926 | sim_r 0.591 ep_len 165.1 ep_ret 0.563 term 0.17 | 1.60 it/s
+it 1800 | 0.276 h | wm 0.2147 e8 0.3546 | pi -7.095 v 0.0747 imag_r 0.533 surv 0.945 | sim_r 0.648 ep_len 168.1 ep_ret 0.592 term 0.14 | 1.59 it/s
+it 1850 | 0.285 h | wm 0.1879 e8 0.3101 | pi -7.343 v 0.0606 imag_r 0.566 surv 0.955 | sim_r 0.644 ep_len 185.6 ep_ret 0.634 term 0.08 | 1.60 it/s
+it 1900 | 0.294 h | wm 0.1557 e8 0.2577 | pi -7.613 v 0.0427 imag_r 0.605 surv 0.968 | sim_r 0.695 ep_len 188.6 ep_ret 0.679 term 0.04 | 1.56 it/s
+it 1950 | 0.303 h | wm 0.1289 e8 0.2146 | pi -7.755 v 0.0328 imag_r 0.635 surv 0.975 | sim_r 0.687 ep_len 191.6 ep_ret 0.679 term 0.05 | 1.60 it/s
+it 2000 | 0.311 h | wm 0.1064 e8 0.1765 | pi -8.026 v 0.0275 imag_r 0.664 surv 0.982 | sim_r 0.699 ep_len 195.1 ep_ret 0.719 term 0.02 | 1.59 it/s
+it 2050 | 0.320 h | wm 0.0854 e8 0.1423 | pi -8.101 v 0.0196 imag_r 0.691 surv 0.986 | sim_r 0.713 ep_len 199.9 ep_ret 0.717 term 0.02 | 1.58 it/s
+it 2100 | 0.329 h | wm 0.0693 e8 0.1156 | pi -8.288 v 0.0148 imag_r 0.712 surv 0.990 | sim_r 0.721 ep_len 198.6 ep_ret 0.728 term 0.02 | 1.59 it/s
+it 2150 | 0.338 h | wm 0.0601 e8 0.1016 | pi -8.327 v 0.0132 imag_r 0.731 surv 0.992 | sim_r 0.725 ep_len 197.0 ep_ret 0.734 term 0.02 | 1.59 it/s
+it 2200 | 0.346 h | wm 0.0540 e8 0.0919 | pi -8.334 v 0.0109 imag_r 0.740 surv 0.993 | sim_r 0.734 ep_len 196.2 ep_ret 0.739 term 0.02 | 1.60 it/s
+it 2250 | 0.355 h | wm 0.0473 e8 0.0813 | pi -8.475 v 0.0091 imag_r 0.752 surv 0.995 | sim_r 0.743 ep_len 202.9 ep_ret 0.751 term 0.01 | 1.60 it/s
+it 2300 | 0.364 h | wm 0.0457 e8 0.0778 | pi -8.515 v 0.0104 imag_r 0.757 surv 0.995 | sim_r 0.745 ep_len 197.1 ep_ret 0.748 term 0.02 | 1.59 it/s
+it 2350 | 0.372 h | wm 0.0412 e8 0.0691 | pi -8.542 v 0.0070 imag_r 0.767 surv 0.995 | sim_r 0.753 ep_len 200.0 ep_ret 0.762 term 0.01 | 1.60 it/s
+it 2400 | 0.381 h | wm 0.0389 e8 0.0663 | pi -8.618 v 0.0066 imag_r 0.772 surv 0.996 | sim_r 0.758 ep_len 196.5 ep_ret 0.764 term 0.01 | 1.60 it/s
+it 2450 | 0.390 h | wm 0.0363 e8 0.0615 | pi -8.654 v 0.0062 imag_r 0.779 surv 0.996 | sim_r 0.764 ep_len 199.4 ep_ret 0.773 term 0.01 | 1.59 it/s
+it 2500 | 0.399 h | wm 0.0349 e8 0.0590 | pi -8.727 v 0.0058 imag_r 0.786 surv 0.996 | sim_r 0.768 ep_len 200.8 ep_ret 0.775 term 0.01 | 1.56 it/s
+it 2550 | 0.407 h | wm 0.0342 e8 0.0576 | pi -8.778 v 0.0064 imag_r 0.791 surv 0.997 | sim_r 0.771 ep_len 196.5 ep_ret 0.779 term 0.01 | 1.58 it/s
+it 2600 | 0.416 h | wm 0.0334 e8 0.0561 | pi -8.722 v 0.0047 imag_r 0.796 surv 0.997 | sim_r 0.775 ep_len 198.8 ep_ret 0.780 term 0.01 | 1.60 it/s
+it 2650 | 0.425 h | wm 0.0320 e8 0.0541 | pi -8.762 v 0.0045 imag_r 0.801 surv 0.997 | sim_r 0.781 ep_len 196.4 ep_ret 0.785 term 0.01 | 1.60 it/s
+it 2700 | 0.434 h | wm 0.0302 e8 0.0504 | pi -8.828 v 0.0045 imag_r 0.805 surv 0.997 | sim_r 0.779 ep_len 197.2 ep_ret 0.786 term 0.01 | 1.60 it/s
+it 2750 | 0.442 h | wm 0.0295 e8 0.0485 | pi -8.819 v 0.0041 imag_r 0.809 surv 0.997 | sim_r 0.787 ep_len 200.2 ep_ret 0.793 term 0.01 | 1.60 it/s
+it 2800 | 0.451 h | wm 0.0283 e8 0.0468 | pi -8.881 v 0.0040 imag_r 0.813 surv 0.997 | sim_r 0.785 ep_len 198.9 ep_ret 0.797 term 0.01 | 1.60 it/s
+it 2850 | 0.460 h | wm 0.0277 e8 0.0456 | pi -8.837 v 0.0034 imag_r 0.817 surv 0.998 | sim_r 0.793 ep_len 202.6 ep_ret 0.793 term 0.01 | 1.61 it/s
+it 2900 | 0.468 h | wm 0.0263 e8 0.0432 | pi -8.901 v 0.0038 imag_r 0.819 surv 0.997 | sim_r 0.792 ep_len 199.7 ep_ret 0.799 term 0.01 | 1.60 it/s
+it 2950 | 0.477 h | wm 0.0257 e8 0.0417 | pi -8.880 v 0.0033 imag_r 0.823 surv 0.998 | sim_r 0.801 ep_len 199.0 ep_ret 0.802 term 0.00 | 1.60 it/s
+it 3000 | 0.486 h | wm 0.0249 e8 0.0405 | pi -8.905 v 0.0037 imag_r 0.826 surv 0.998 | sim_r 0.803 ep_len 195.3 ep_ret 0.801 term 0.00 | 1.59 it/s
+it 3050 | 0.495 h | wm 0.0248 e8 0.0400 | pi -8.952 v 0.0033 imag_r 0.828 surv 0.998 | sim_r 0.805 ep_len 192.6 ep_ret 0.813 term 0.00 | 1.54 it/s
+it 3100 | 0.503 h | wm 0.0240 e8 0.0389 | pi -8.995 v 0.0033 imag_r 0.832 surv 0.998 | sim_r 0.805 ep_len 195.2 ep_ret 0.808 term 0.00 | 1.60 it/s
+it 3150 | 0.512 h | wm 0.0237 e8 0.0381 | pi -8.983 v 0.0031 imag_r 0.832 surv 0.998 | sim_r 0.807 ep_len 196.2 ep_ret 0.812 term 0.00 | 1.60 it/s
+it 3200 | 0.521 h | wm 0.0231 e8 0.0370 | pi -9.026 v 0.0031 imag_r 0.835 surv 0.998 | sim_r 0.805 ep_len 187.9 ep_ret 0.808 term 0.00 | 1.60 it/s
+it 3250 | 0.529 h | wm 0.0222 e8 0.0354 | pi -9.067 v 0.0029 imag_r 0.838 surv 0.998 | sim_r 0.803 ep_len 191.4 ep_ret 0.813 term 0.00 | 1.60 it/s
+it 3300 | 0.538 h | wm 0.0223 e8 0.0360 | pi -9.042 v 0.0034 imag_r 0.840 surv 0.998 | sim_r 0.808 ep_len 189.9 ep_ret 0.811 term 0.01 | 1.60 it/s
+it 3350 | 0.547 h | wm 0.0229 e8 0.0366 | pi -9.092 v 0.0031 imag_r 0.844 surv 0.998 | sim_r 0.813 ep_len 198.8 ep_ret 0.812 term 0.01 | 1.58 it/s
+it 3400 | 0.556 h | wm 0.0227 e8 0.0363 | pi -9.084 v 0.0031 imag_r 0.845 surv 0.998 | sim_r 0.815 ep_len 188.0 ep_ret 0.815 term 0.00 | 1.59 it/s
+it 3450 | 0.564 h | wm 0.0222 e8 0.0354 | pi -9.102 v 0.0029 imag_r 0.847 surv 0.998 | sim_r 0.819 ep_len 194.1 ep_ret 0.822 term 0.00 | 1.60 it/s
+it 3500 | 0.573 h | wm 0.0217 e8 0.0343 | pi -9.090 v 0.0029 imag_r 0.849 surv 0.997 | sim_r 0.819 ep_len 191.6 ep_ret 0.824 term 0.00 | 1.60 it/s
+it 3550 | 0.582 h | wm 0.0218 e8 0.0348 | pi -9.125 v 0.0029 imag_r 0.852 surv 0.998 | sim_r 0.825 ep_len 181.6 ep_ret 0.816 term 0.00 | 1.57 it/s
+it 3600 | 0.591 h | wm 0.0217 e8 0.0343 | pi -9.134 v 0.0027 imag_r 0.854 surv 0.998 | sim_r 0.823 ep_len 182.9 ep_ret 0.824 term 0.00 | 1.60 it/s
+it 3650 | 0.599 h | wm 0.0207 e8 0.0329 | pi -9.146 v 0.0024 imag_r 0.856 surv 0.998 | sim_r 0.824 ep_len 184.5 ep_ret 0.829 term 0.00 | 1.56 it/s
+it 3700 | 0.608 h | wm 0.0211 e8 0.0335 | pi -9.177 v 0.0031 imag_r 0.856 surv 0.998 | sim_r 0.823 ep_len 191.2 ep_ret 0.825 term 0.00 | 1.59 it/s
+it 3750 | 0.617 h | wm 0.0205 e8 0.0325 | pi -9.162 v 0.0024 imag_r 0.859 surv 0.998 | sim_r 0.832 ep_len 190.2 ep_ret 0.826 term 0.00 | 1.59 it/s
+it 3800 | 0.626 h | wm 0.0197 e8 0.0312 | pi -9.164 v 0.0025 imag_r 0.862 surv 0.998 | sim_r 0.830 ep_len 180.5 ep_ret 0.828 term 0.00 | 1.59 it/s
+it 3850 | 0.634 h | wm 0.0199 e8 0.0316 | pi -9.177 v 0.0023 imag_r 0.863 surv 0.998 | sim_r 0.828 ep_len 185.3 ep_ret 0.833 term 0.00 | 1.59 it/s
+it 3900 | 0.643 h | wm 0.0192 e8 0.0305 | pi -9.233 v 0.0025 imag_r 0.864 surv 0.998 | sim_r 0.830 ep_len 189.0 ep_ret 0.828 term 0.00 | 1.60 it/s
+it 3950 | 0.652 h | wm 0.0195 e8 0.0306 | pi -9.205 v 0.0026 imag_r 0.866 surv 0.998 | sim_r 0.829 ep_len 182.5 ep_ret 0.828 term 0.00 | 1.60 it/s
+it 4000 | 0.660 h | wm 0.0188 e8 0.0298 | pi -9.190 v 0.0022 imag_r 0.868 surv 0.998 | sim_r 0.837 ep_len 184.0 ep_ret 0.835 term 0.00 | 1.60 it/s
+it 4050 | 0.669 h | wm 0.0187 e8 0.0291 | pi -9.212 v 0.0021 imag_r 0.870 surv 0.998 | sim_r 0.833 ep_len 184.7 ep_ret 0.835 term 0.00 | 1.59 it/s
+it 4100 | 0.678 h | wm 0.0181 e8 0.0282 | pi -9.232 v 0.0024 imag_r 0.872 surv 0.998 | sim_r 0.841 ep_len 184.1 ep_ret 0.835 term 0.00 | 1.60 it/s
+it 4150 | 0.686 h | wm 0.0184 e8 0.0288 | pi -9.214 v 0.0025 imag_r 0.872 surv 0.998 | sim_r 0.841 ep_len 188.2 ep_ret 0.839 term 0.00 | 1.60 it/s
+it 4200 | 0.695 h | wm 0.0184 e8 0.0289 | pi -9.230 v 0.0021 imag_r 0.873 surv 0.998 | sim_r 0.842 ep_len 180.1 ep_ret 0.838 term 0.00 | 1.60 it/s
+it 4250 | 0.704 h | wm 0.0177 e8 0.0271 | pi -9.263 v 0.0019 imag_r 0.876 surv 0.998 | sim_r 0.844 ep_len 186.7 ep_ret 0.841 term 0.00 | 1.56 it/s
+it 4300 | 0.713 h | wm 0.0176 e8 0.0271 | pi -9.262 v 0.0018 imag_r 0.878 surv 0.998 | sim_r 0.847 ep_len 173.7 ep_ret 0.838 term 0.00 | 1.59 it/s
+it 4350 | 0.721 h | wm 0.0170 e8 0.0263 | pi -9.264 v 0.0019 imag_r 0.880 surv 0.998 | sim_r 0.847 ep_len 181.1 ep_ret 0.843 term 0.00 | 1.60 it/s
+it 4400 | 0.730 h | wm 0.0172 e8 0.0262 | pi -9.246 v 0.0020 imag_r 0.880 surv 0.999 | sim_r 0.849 ep_len 181.3 ep_ret 0.847 term 0.00 | 1.60 it/s
+it 4450 | 0.739 h | wm 0.0171 e8 0.0261 | pi -9.300 v 0.0020 imag_r 0.883 surv 0.999 | sim_r 0.850 ep_len 172.5 ep_ret 0.841 term 0.00 | 1.61 it/s
+it 4500 | 0.747 h | wm 0.0166 e8 0.0251 | pi -9.315 v 0.0018 imag_r 0.886 surv 0.999 | sim_r 0.851 ep_len 176.0 ep_ret 0.844 term 0.00 | 1.60 it/s
+it 4550 | 0.756 h | wm 0.0162 e8 0.0246 | pi -9.296 v 0.0016 imag_r 0.886 surv 0.999 | sim_r 0.849 ep_len 176.5 ep_ret 0.848 term 0.00 | 1.58 it/s
+it 4600 | 0.765 h | wm 0.0167 e8 0.0258 | pi -9.313 v 0.0021 imag_r 0.886 surv 0.999 | sim_r 0.850 ep_len 174.1 ep_ret 0.845 term 0.00 | 1.61 it/s
+it 4650 | 0.774 h | wm 0.0158 e8 0.0240 | pi -9.320 v 0.0017 imag_r 0.888 surv 0.999 | sim_r 0.850 ep_len 176.7 ep_ret 0.843 term 0.00 | 1.60 it/s
+it 4700 | 0.782 h | wm 0.0164 e8 0.0247 | pi -9.352 v 0.0018 imag_r 0.889 surv 0.999 | sim_r 0.855 ep_len 176.2 ep_ret 0.844 term 0.00 | 1.60 it/s
+it 4750 | 0.791 h | wm 0.0163 e8 0.0244 | pi -9.339 v 0.0017 imag_r 0.889 surv 0.998 | sim_r 0.852 ep_len 169.4 ep_ret 0.842 term 0.00 | 1.59 it/s
+it 4800 | 0.800 h | wm 0.0161 e8 0.0244 | pi -9.341 v 0.0018 imag_r 0.890 surv 0.999 | sim_r 0.856 ep_len 166.3 ep_ret 0.844 term 0.00 | 1.55 it/s
+it 4850 | 0.809 h | wm 0.0158 e8 0.0238 | pi -9.339 v 0.0017 imag_r 0.891 surv 0.999 | sim_r 0.855 ep_len 173.5 ep_ret 0.849 term 0.00 | 1.59 it/s
+it 4900 | 0.817 h | wm 0.0155 e8 0.0232 | pi -9.342 v 0.0017 imag_r 0.891 surv 0.999 | sim_r 0.859 ep_len 165.4 ep_ret 0.843 term 0.00 | 1.60 it/s
+it 4950 | 0.826 h | wm 0.0159 e8 0.0240 | pi -9.344 v 0.0016 imag_r 0.892 surv 0.999 | sim_r 0.853 ep_len 169.1 ep_ret 0.847 term 0.00 | 1.59 it/s
+it 5000 | 0.835 h | wm 0.0157 e8 0.0237 | pi -9.317 v 0.0021 imag_r 0.891 surv 0.999 | sim_r 0.858 ep_len 175.7 ep_ret 0.850 term 0.00 | 1.59 it/s
+it 5050 | 0.844 h | wm 0.0160 e8 0.0239 | pi -9.360 v 0.0015 imag_r 0.893 surv 0.999 | sim_r 0.857 ep_len 171.9 ep_ret 0.849 term 0.00 | 1.57 it/s
+it 5100 | 0.852 h | wm 0.0157 e8 0.0231 | pi -9.360 v 0.0015 imag_r 0.893 surv 0.999 | sim_r 0.858 ep_len 167.8 ep_ret 0.847 term 0.00 | 1.59 it/s
+it 5150 | 0.861 h | wm 0.0160 e8 0.0238 | pi -9.340 v 0.0017 imag_r 0.894 surv 0.999 | sim_r 0.858 ep_len 164.6 ep_ret 0.845 term 0.00 | 1.59 it/s
+it 5200 | 0.870 h | wm 0.0160 e8 0.0237 | pi -9.354 v 0.0015 imag_r 0.894 surv 0.999 | sim_r 0.857 ep_len 174.0 ep_ret 0.851 term 0.00 | 1.59 it/s
+it 5250 | 0.879 h | wm 0.0161 e8 0.0238 | pi -9.371 v 0.0014 imag_r 0.895 surv 0.999 | sim_r 0.860 ep_len 173.2 ep_ret 0.848 term 0.00 | 1.60 it/s
+it 5300 | 0.887 h | wm 0.0157 e8 0.0229 | pi -9.367 v 0.0014 imag_r 0.895 surv 0.999 | sim_r 0.857 ep_len 171.4 ep_ret 0.849 term 0.00 | 1.60 it/s
+it 5350 | 0.896 h | wm 0.0160 e8 0.0238 | pi -9.381 v 0.0015 imag_r 0.894 surv 0.999 | sim_r 0.856 ep_len 176.5 ep_ret 0.854 term 0.00 | 1.59 it/s
+it 5400 | 0.905 h | wm 0.0161 e8 0.0237 | pi -9.366 v 0.0014 imag_r 0.895 surv 0.999 | sim_r 0.863 ep_len 161.8 ep_ret 0.836 term 0.00 | 1.55 it/s
+it 5450 | 0.914 h | wm 0.0155 e8 0.0226 | pi -9.377 v 0.0016 imag_r 0.896 surv 0.999 | sim_r 0.857 ep_len 163.4 ep_ret 0.842 term 0.01 | 1.59 it/s
+it 5500 | 0.922 h | wm 0.0155 e8 0.0229 | pi -9.373 v 0.0016 imag_r 0.896 surv 0.999 | sim_r 0.867 ep_len 153.6 ep_ret 0.838 term 0.00 | 1.60 it/s
+it 5550 | 0.931 h | wm 0.0151 e8 0.0221 | pi -9.414 v 0.0019 imag_r 0.897 surv 0.999 | sim_r 0.859 ep_len 166.6 ep_ret 0.845 term 0.00 | 1.57 it/s
+it 5600 | 0.940 h | wm 0.0156 e8 0.0230 | pi -9.387 v 0.0014 imag_r 0.898 surv 0.999 | sim_r 0.865 ep_len 167.9 ep_ret 0.852 term 0.00 | 1.59 it/s
+it 5650 | 0.949 h | wm 0.0147 e8 0.0216 | pi -9.397 v 0.0013 imag_r 0.899 surv 0.999 | sim_r 0.863 ep_len 171.3 ep_ret 0.850 term 0.00 | 1.59 it/s
+it 5700 | 0.957 h | wm 0.0148 e8 0.0218 | pi -9.423 v 0.0014 imag_r 0.899 surv 0.999 | sim_r 0.863 ep_len 166.2 ep_ret 0.847 term 0.01 | 1.59 it/s
+it 5750 | 0.966 h | wm 0.0149 e8 0.0216 | pi -9.392 v 0.0013 imag_r 0.899 surv 0.998 | sim_r 0.863 ep_len 166.8 ep_ret 0.846 term 0.01 | 1.58 it/s
+it 5800 | 0.975 h | wm 0.0151 e8 0.0224 | pi -9.403 v 0.0013 imag_r 0.900 surv 0.998 | sim_r 0.865 ep_len 168.9 ep_ret 0.848 term 0.00 | 1.59 it/s
+it 5850 | 0.984 h | wm 0.0149 e8 0.0218 | pi -9.390 v 0.0014 imag_r 0.901 surv 0.998 | sim_r 0.864 ep_len 166.2 ep_ret 0.849 term 0.00 | 1.55 it/s
+it 5900 | 0.993 h | wm 0.0146 e8 0.0213 | pi -9.415 v 0.0013 imag_r 0.901 surv 0.998 | sim_r 0.868 ep_len 164.9 ep_ret 0.848 term 0.00 | 1.56 it/s
+it 5950 | 1.002 h | wm 0.0145 e8 0.0211 | pi -9.398 v 0.0014 imag_r 0.901 surv 0.998 | sim_r 0.864 ep_len 160.3 ep_ret 0.848 term 0.01 | 1.52 it/s
+it 6000 | 1.011 h | wm 0.0145 e8 0.0213 | pi -9.421 v 0.0015 imag_r 0.902 surv 0.998 | sim_r 0.865 ep_len 175.8 ep_ret 0.856 term 0.00 | 1.55 it/s
+it 6050 | 1.020 h | wm 0.0147 e8 0.0215 | pi -9.414 v 0.0013 imag_r 0.902 surv 0.998 | sim_r 0.866 ep_len 169.2 ep_ret 0.853 term 0.00 | 1.54 it/s
+it 6100 | 1.029 h | wm 0.0147 e8 0.0214 | pi -9.421 v 0.0014 imag_r 0.903 surv 0.998 | sim_r 0.867 ep_len 165.4 ep_ret 0.847 term 0.00 | 1.56 it/s
+it 6150 | 1.038 h | wm 0.0148 e8 0.0218 | pi -9.424 v 0.0013 imag_r 0.903 surv 0.998 | sim_r 0.864 ep_len 174.0 ep_ret 0.855 term 0.00 | 1.56 it/s
+it 6200 | 1.047 h | wm 0.0142 e8 0.0208 | pi -9.428 v 0.0012 imag_r 0.903 surv 0.998 | sim_r 0.872 ep_len 164.6 ep_ret 0.850 term 0.00 | 1.56 it/s
+it 6250 | 1.056 h | wm 0.0144 e8 0.0209 | pi -9.430 v 0.0013 imag_r 0.904 surv 0.998 | sim_r 0.867 ep_len 170.0 ep_ret 0.857 term 0.00 | 1.56 it/s
+it 6300 | 1.064 h | wm 0.0146 e8 0.0213 | pi -9.437 v 0.0013 imag_r 0.904 surv 0.999 | sim_r 0.872 ep_len 158.1 ep_ret 0.856 term 0.00 | 1.57 it/s
+it 6350 | 1.073 h | wm 0.0145 e8 0.0211 | pi -9.420 v 0.0012 imag_r 0.905 surv 0.999 | sim_r 0.871 ep_len 158.5 ep_ret 0.850 term 0.00 | 1.56 it/s
+it 6400 | 1.082 h | wm 0.0147 e8 0.0215 | pi -9.441 v 0.0013 imag_r 0.905 surv 0.999 | sim_r 0.867 ep_len 162.3 ep_ret 0.857 term 0.00 | 1.56 it/s
+it 6450 | 1.091 h | wm 0.0150 e8 0.0218 | pi -9.448 v 0.0012 imag_r 0.905 surv 0.999 | sim_r 0.872 ep_len 167.3 ep_ret 0.859 term 0.00 | 1.55 it/s
+it 6500 | 1.100 h | wm 0.0145 e8 0.0213 | pi -9.466 v 0.0014 imag_r 0.906 surv 0.999 | sim_r 0.871 ep_len 154.6 ep_ret 0.853 term 0.00 | 1.55 it/s
+it 6550 | 1.109 h | wm 0.0149 e8 0.0216 | pi -9.446 v 0.0012 imag_r 0.907 surv 0.999 | sim_r 0.870 ep_len 162.5 ep_ret 0.861 term 0.00 | 1.50 it/s
+it 6600 | 1.118 h | wm 0.0152 e8 0.0223 | pi -9.448 v 0.0012 imag_r 0.907 surv 0.999 | sim_r 0.872 ep_len 165.5 ep_ret 0.860 term 0.00 | 1.55 it/s
+it 6650 | 1.127 h | wm 0.0143 e8 0.0207 | pi -9.464 v 0.0011 imag_r 0.907 surv 0.999 | sim_r 0.869 ep_len 172.0 ep_ret 0.860 term 0.00 | 1.55 it/s
+it 6700 | 1.136 h | wm 0.0148 e8 0.0214 | pi -9.459 v 0.0013 imag_r 0.907 surv 0.999 | sim_r 0.875 ep_len 161.3 ep_ret 0.857 term 0.00 | 1.55 it/s
+it 6750 | 1.145 h | wm 0.0153 e8 0.0223 | pi -9.445 v 0.0014 imag_r 0.907 surv 0.999 | sim_r 0.869 ep_len 160.8 ep_ret 0.859 term 0.00 | 1.56 it/s
+it 6800 | 1.154 h | wm 0.0147 e8 0.0215 | pi -9.474 v 0.0014 imag_r 0.908 surv 0.999 | sim_r 0.876 ep_len 156.9 ep_ret 0.858 term 0.00 | 1.55 it/s
+it 6850 | 1.163 h | wm 0.0146 e8 0.0214 | pi -9.476 v 0.0010 imag_r 0.909 surv 0.999 | sim_r 0.870 ep_len 169.9 ep_ret 0.865 term 0.00 | 1.54 it/s
+it 6900 | 1.172 h | wm 0.0144 e8 0.0210 | pi -9.481 v 0.0012 imag_r 0.909 surv 0.999 | sim_r 0.878 ep_len 152.9 ep_ret 0.857 term 0.00 | 1.58 it/s
+it 6950 | 1.181 h | wm 0.0143 e8 0.0206 | pi -9.491 v 0.0012 imag_r 0.910 surv 0.999 | sim_r 0.875 ep_len 161.2 ep_ret 0.861 term 0.00 | 1.61 it/s
+it 7000 | 1.189 h | wm 0.0146 e8 0.0214 | pi -9.501 v 0.0011 imag_r 0.911 surv 0.999 | sim_r 0.880 ep_len 152.6 ep_ret 0.859 term 0.00 | 1.60 it/s
+it 7050 | 1.198 h | wm 0.0142 e8 0.0206 | pi -9.500 v 0.0010 imag_r 0.911 surv 0.999 | sim_r 0.875 ep_len 151.0 ep_ret 0.859 term 0.00 | 1.58 it/s
+it 7100 | 1.207 h | wm 0.0145 e8 0.0210 | pi -9.489 v 0.0011 imag_r 0.911 surv 0.999 | sim_r 0.877 ep_len 158.4 ep_ret 0.864 term 0.00 | 1.60 it/s
+it 7150 | 1.216 h | wm 0.0148 e8 0.0213 | pi -9.501 v 0.0011 imag_r 0.912 surv 0.999 | sim_r 0.878 ep_len 163.2 ep_ret 0.864 term 0.00 | 1.55 it/s
+it 7200 | 1.224 h | wm 0.0143 e8 0.0205 | pi -9.508 v 0.0010 imag_r 0.912 surv 0.999 | sim_r 0.874 ep_len 172.2 ep_ret 0.869 term 0.00 | 1.59 it/s
+it 7250 | 1.233 h | wm 0.0145 e8 0.0209 | pi -9.500 v 0.0011 imag_r 0.912 surv 0.999 | sim_r 0.877 ep_len 167.0 ep_ret 0.864 term 0.00 | 1.59 it/s
+it 7300 | 1.242 h | wm 0.0142 e8 0.0204 | pi -9.513 v 0.0011 imag_r 0.913 surv 0.999 | sim_r 0.872 ep_len 172.7 ep_ret 0.869 term 0.00 | 1.59 it/s
+it 7350 | 1.251 h | wm 0.0140 e8 0.0202 | pi -9.519 v 0.0011 imag_r 0.913 surv 0.999 | sim_r 0.876 ep_len 165.1 ep_ret 0.864 term 0.00 | 1.59 it/s
+it 7400 | 1.259 h | wm 0.0144 e8 0.0209 | pi -9.502 v 0.0011 imag_r 0.912 surv 0.999 | sim_r 0.877 ep_len 170.9 ep_ret 0.864 term 0.00 | 1.59 it/s
+it 7450 | 1.268 h | wm 0.0141 e8 0.0202 | pi -9.518 v 0.0011 imag_r 0.912 surv 0.999 | sim_r 0.881 ep_len 162.4 ep_ret 0.863 term 0.00 | 1.59 it/s
+it 7500 | 1.277 h | wm 0.0142 e8 0.0207 | pi -9.512 v 0.0010 imag_r 0.913 surv 0.999 | sim_r 0.878 ep_len 162.5 ep_ret 0.866 term 0.00 | 1.59 it/s
+it 7550 | 1.286 h | wm 0.0140 e8 0.0202 | pi -9.521 v 0.0010 imag_r 0.913 surv 0.999 | sim_r 0.877 ep_len 162.9 ep_ret 0.870 term 0.00 | 1.58 it/s
+it 7600 | 1.294 h | wm 0.0142 e8 0.0206 | pi -9.523 v 0.0010 imag_r 0.913 surv 0.999 | sim_r 0.879 ep_len 166.5 ep_ret 0.864 term 0.00 | 1.59 it/s
+it 7650 | 1.303 h | wm 0.0142 e8 0.0206 | pi -9.526 v 0.0010 imag_r 0.913 surv 0.999 | sim_r 0.879 ep_len 156.4 ep_ret 0.861 term 0.00 | 1.59 it/s
+it 7700 | 1.312 h | wm 0.0141 e8 0.0203 | pi -9.530 v 0.0010 imag_r 0.915 surv 0.999 | sim_r 0.879 ep_len 156.5 ep_ret 0.864 term 0.00 | 1.55 it/s
+it 7750 | 1.321 h | wm 0.0138 e8 0.0197 | pi -9.535 v 0.0010 imag_r 0.915 surv 0.999 | sim_r 0.880 ep_len 157.6 ep_ret 0.866 term 0.00 | 1.59 it/s
+it 7800 | 1.330 h | wm 0.0139 e8 0.0199 | pi -9.529 v 0.0010 imag_r 0.915 surv 0.999 | sim_r 0.877 ep_len 165.9 ep_ret 0.868 term 0.00 | 1.60 it/s
+it 7850 | 1.338 h | wm 0.0144 e8 0.0208 | pi -9.520 v 0.0012 imag_r 0.914 surv 0.999 | sim_r 0.880 ep_len 162.9 ep_ret 0.868 term 0.00 | 1.60 it/s
+it 7900 | 1.347 h | wm 0.0139 e8 0.0201 | pi -9.522 v 0.0010 imag_r 0.915 surv 0.999 | sim_r 0.879 ep_len 162.2 ep_ret 0.867 term 0.00 | 1.60 it/s
+it 7950 | 1.356 h | wm 0.0145 e8 0.0209 | pi -9.521 v 0.0011 imag_r 0.915 surv 0.999 | sim_r 0.880 ep_len 160.4 ep_ret 0.867 term 0.00 | 1.60 it/s
+it 8000 | 1.364 h | wm 0.0144 e8 0.0205 | pi -9.539 v 0.0010 imag_r 0.916 surv 0.999 | sim_r 0.883 ep_len 152.1 ep_ret 0.862 term 0.00 | 1.60 it/s
+it 8050 | 1.373 h | wm 0.0137 e8 0.0196 | pi -9.552 v 0.0010 imag_r 0.916 surv 0.999 | sim_r 0.880 ep_len 157.9 ep_ret 0.866 term 0.00 | 1.58 it/s
+it 8100 | 1.382 h | wm 0.0142 e8 0.0207 | pi -9.528 v 0.0011 imag_r 0.916 surv 0.999 | sim_r 0.881 ep_len 161.9 ep_ret 0.871 term 0.00 | 1.60 it/s
+it 8150 | 1.390 h | wm 0.0139 e8 0.0199 | pi -9.542 v 0.0011 imag_r 0.916 surv 0.999 | sim_r 0.878 ep_len 166.7 ep_ret 0.867 term 0.00 | 1.60 it/s
+it 8200 | 1.399 h | wm 0.0138 e8 0.0199 | pi -9.539 v 0.0010 imag_r 0.917 surv 0.999 | sim_r 0.882 ep_len 161.0 ep_ret 0.868 term 0.00 | 1.59 it/s
+it 8250 | 1.408 h | wm 0.0135 e8 0.0193 | pi -9.540 v 0.0009 imag_r 0.917 surv 0.999 | sim_r 0.882 ep_len 167.8 ep_ret 0.870 term 0.00 | 1.59 it/s
+it 8300 | 1.417 h | wm 0.0138 e8 0.0196 | pi -9.538 v 0.0010 imag_r 0.917 surv 0.999 | sim_r 0.882 ep_len 163.9 ep_ret 0.867 term 0.00 | 1.55 it/s
+it 8350 | 1.425 h | wm 0.0138 e8 0.0195 | pi -9.546 v 0.0009 imag_r 0.917 surv 0.999 | sim_r 0.880 ep_len 172.4 ep_ret 0.874 term 0.00 | 1.60 it/s
+it 8400 | 1.434 h | wm 0.0140 e8 0.0201 | pi -9.543 v 0.0009 imag_r 0.917 surv 0.999 | sim_r 0.882 ep_len 165.1 ep_ret 0.869 term 0.00 | 1.59 it/s
+it 8450 | 1.443 h | wm 0.0137 e8 0.0196 | pi -9.544 v 0.0009 imag_r 0.917 surv 0.999 | sim_r 0.881 ep_len 165.4 ep_ret 0.869 term 0.00 | 1.60 it/s
+it 8500 | 1.452 h | wm 0.0136 e8 0.0195 | pi -9.543 v 0.0010 imag_r 0.917 surv 0.999 | sim_r 0.882 ep_len 169.6 ep_ret 0.871 term 0.00 | 1.60 it/s
+it 8550 | 1.460 h | wm 0.0134 e8 0.0195 | pi -9.535 v 0.0012 imag_r 0.918 surv 0.999 | sim_r 0.883 ep_len 169.2 ep_ret 0.872 term 0.00 | 1.58 it/s
+it 8600 | 1.469 h | wm 0.0134 e8 0.0192 | pi -9.546 v 0.0011 imag_r 0.918 surv 0.999 | sim_r 0.882 ep_len 166.7 ep_ret 0.872 term 0.00 | 1.59 it/s
+it 8650 | 1.478 h | wm 0.0134 e8 0.0191 | pi -9.549 v 0.0010 imag_r 0.918 surv 0.999 | sim_r 0.885 ep_len 165.9 ep_ret 0.873 term 0.00 | 1.60 it/s
+it 8700 | 1.486 h | wm 0.0134 e8 0.0192 | pi -9.555 v 0.0010 imag_r 0.918 surv 0.999 | sim_r 0.878 ep_len 165.7 ep_ret 0.871 term 0.00 | 1.60 it/s
+it 8750 | 1.495 h | wm 0.0137 e8 0.0196 | pi -9.553 v 0.0009 imag_r 0.918 surv 0.999 | sim_r 0.884 ep_len 162.5 ep_ret 0.870 term 0.00 | 1.59 it/s
+it 8800 | 1.504 h | wm 0.0136 e8 0.0194 | pi -9.563 v 0.0009 imag_r 0.919 surv 0.999 | sim_r 0.880 ep_len 163.6 ep_ret 0.869 term 0.00 | 1.59 it/s
+it 8850 | 1.513 h | wm 0.0135 e8 0.0192 | pi -9.562 v 0.0010 imag_r 0.918 surv 0.999 | sim_r 0.881 ep_len 167.1 ep_ret 0.870 term 0.00 | 1.57 it/s
+it 8900 | 1.522 h | wm 0.0137 e8 0.0196 | pi -9.560 v 0.0010 imag_r 0.919 surv 0.999 | sim_r 0.884 ep_len 163.1 ep_ret 0.869 term 0.00 | 1.60 it/s
+it 8950 | 1.530 h | wm 0.0135 e8 0.0191 | pi -9.559 v 0.0010 imag_r 0.918 surv 0.999 | sim_r 0.879 ep_len 164.0 ep_ret 0.871 term 0.00 | 1.59 it/s
+it 9000 | 1.539 h | wm 0.0136 e8 0.0194 | pi -9.551 v 0.0010 imag_r 0.919 surv 0.999 | sim_r 0.883 ep_len 168.0 ep_ret 0.871 term 0.00 | 1.59 it/s
+BOUNDED_TRAINING_FINISHED 9029
+[INFO]: SimulationContext cleared

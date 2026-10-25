@@ -1,0 +1,19 @@
+{
+  "phases": {
+    "preparation": {
+      "excess_pair_asymmetry_rmse_deg": 2.831842823509361
+    },
+    "takeoff": {
+      "excess_pair_asymmetry_rmse_deg": 4.701290393050569
+    },
+    "flight_fixed_reference_window": {
+      "excess_pair_asymmetry_rmse_deg": 4.511524144226749
+    }
+  },
+  "left_right_departure_step": [
+    87,
+    87
+  ],
+  "departure_gap_seconds": 0.0,
+  "note": "Same fixed windows and geometric departure threshold as V12/V13; force-based diagnostics are additional."
+}

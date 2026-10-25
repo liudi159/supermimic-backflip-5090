@@ -1,0 +1,78 @@
+{
+  "source": "pristine upstream env + evaluation-only recorder",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "frames": 321,
+  "roundtrip_max": {
+    "p": 0.0,
+    "R": 0.0,
+    "v": 0.0,
+    "w": 0.0,
+    "q": 0.0,
+    "qd": 0.0
+  },
+  "fk_position_max_m": 4.512985753990506e-07,
+  "fk_rotation_max_rad": 0.001423572306521237,
+  "joint_order_matches": true,
+  "calibration_joint_feedforward_Nm": [
+    1.01474830328812,
+    -0.3582059112720587,
+    0.18234742157702033,
+    -10.125173333667837,
+    5.616425831459906,
+    0.0,
+    1.01474830328812,
+    0.3582059112720587,
+    -0.18234742157702033,
+    -10.125173333667837,
+    5.616425831459906,
+    -1.1102230246251565e-16,
+    0.0,
+    0.026416448171969885,
+    -1.567136911027918,
+    -0.546508906721183,
+    1.2687965601851654,
+    0.35767847647353423,
+    -1.1902664136929146,
+    -0.0027443970760459013,
+    -0.2738783257710775,
+    0.035753822664929824,
+    -0.5465089067211831,
+    -1.2687965601851658,
+    -0.35767847647353435,
+    -1.1902664136929146,
+    0.0027443970760459013,
+    -0.2738783257710777,
+    -0.03575382266492971
+  ],
+  "unrecorded_repeat_max_abs": 3.3732037991285324e-05,
+  "recorder_trajectory_max_abs": 2.4850480258464813e-05,
+  "recorder_position_rotation_joint_max": 3.7550926208496094e-06,
+  "recorder_velocity_max": 2.4850480258464813e-05,
+  "contact_sampling_hz": 200.0,
+  "total_mass_kg": 33.341143417870626,
+  "static_tail_mean_ground_force_N": [
+    -19.35850512742996,
+    0.03399760484695435,
+    322.7995179653168
+  ],
+  "static_support_weight_ratio": 0.9869232505700082,
+  "left_right_tail_vertical_force_N": [
+    161.68971830248833,
+    161.10979966282844
+  ],
+  "total_ground_force_tail_N": [
+    -19.35850512742996,
+    0.03399760484695435,
+    322.7995179653168
+  ],
+  "total_constraint_force_tail_N": [
+    -19.358505668640138,
+    0.03399765131995082,
+    322.79951934814454
+  ],
+  "root_height_final_m": 0.7289974689483643,
+  "force_sum_vs_root_constraint_max_N": 0.0028252601623535156,
+  "calibration_fixture": "Only horizontal force and attitude torque; zero vertical force. Not used in training/evaluation.",
+  "force_on_robot_convention": "actual GPU-solved force on each foot, world XYZ, upward Z positive",
+  "passed": true
+}

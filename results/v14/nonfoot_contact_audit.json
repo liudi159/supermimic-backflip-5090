@@ -1,0 +1,62 @@
+{
+  "geometric_contacts": [
+    {
+      "frame": 119,
+      "time_seconds": 2.38,
+      "penetration_m": -0.001818794692215575,
+      "geom_names": [
+        "/World/ground/GroundPlane/CollisionPlane_0",
+        "/World/envs/env_0/Robot/Geometry/pelvis/right_hip_pitch_link/right_hip_roll_link/right_hip_yaw_link/right_knee_link/right_knee_link_1/right_knee_link_20"
+      ]
+    },
+    {
+      "frame": 119,
+      "time_seconds": 2.38,
+      "penetration_m": -0.0010579818173589717,
+      "geom_names": [
+        "/World/ground/GroundPlane/CollisionPlane_0",
+        "/World/envs/env_0/Robot/Geometry/pelvis/right_hip_pitch_link/right_hip_roll_link/right_hip_yaw_link/right_knee_link/right_knee_link_1/right_knee_link_20"
+      ]
+    },
+    {
+      "frame": 119,
+      "time_seconds": 2.38,
+      "penetration_m": -0.001308738227825068,
+      "geom_names": [
+        "/World/ground/GroundPlane/CollisionPlane_0",
+        "/World/envs/env_0/Robot/Geometry/pelvis/right_hip_pitch_link/right_hip_roll_link/right_hip_yaw_link/right_knee_link/right_knee_link_1/right_knee_link_20"
+      ]
+    },
+    {
+      "frame": 119,
+      "time_seconds": 2.38,
+      "penetration_m": -0.0014987970155685409,
+      "geom_names": [
+        "/World/ground/GroundPlane/CollisionPlane_0",
+        "/World/envs/env_0/Robot/Geometry/pelvis/right_hip_pitch_link/right_hip_roll_link/right_hip_yaw_link/right_knee_link/right_ankle_pitch_link/right_ankle_pitch_link_1/right_ankle_pitch_link_19"
+      ]
+    },
+    {
+      "frame": 119,
+      "time_seconds": 2.38,
+      "penetration_m": -0.001329031433826752,
+      "geom_names": [
+        "/World/ground/GroundPlane/CollisionPlane_0",
+        "/World/envs/env_0/Robot/Geometry/pelvis/right_hip_pitch_link/right_hip_roll_link/right_hip_yaw_link/right_knee_link/right_ankle_pitch_link/right_ankle_pitch_link_1/right_ankle_pitch_link_19"
+      ]
+    },
+    {
+      "frame": 119,
+      "time_seconds": 2.38,
+      "penetration_m": -0.001231357681680192,
+      "geom_names": [
+        "/World/ground/GroundPlane/CollisionPlane_0",
+        "/World/envs/env_0/Robot/Geometry/pelvis/right_hip_pitch_link/right_hip_roll_link/right_hip_yaw_link/right_knee_link/right_ankle_pitch_link/right_ankle_pitch_link_1/right_ankle_pitch_link_19"
+      ]
+    }
+  ],
+  "solver_nonfoot_samples": 0,
+  "solver_times_seconds": [],
+  "solver_nonfoot_forces_N": [],
+  "note": "Geometry recomputed from saved actual poses only to identify contact; solved forces read from original recorded GPU trajectory."
+}

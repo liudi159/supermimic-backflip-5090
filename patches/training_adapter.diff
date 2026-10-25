@@ -1,0 +1,52 @@
+diff --git asupermimic/train.py bsupermimic/train_bounded_backflip.py
+index 5334b4d..667e983 100644
+--- asupermimic/train.py
++++ bsupermimic/train_bounded_backflip.py
+@@ -41,6 +41,7 @@ parser.add_argument("--log_every", type=int, default=50)
+ parser.add_argument("--motion_dir", type=str, default=os.path.join(REPO, "data", "lafan1_g1"))
+ parser.add_argument("--log_dir", type=str, default=os.path.join(REPO, "logs", "run"))
+ parser.add_argument("--seed", type=int, default=0)
++parser.add_argument("--max_policy_minutes", type=float, default=90.0)
+ parser.add_argument("--resume", type=str, default=None)
+ parser.add_argument("--amp", type=str, default="bf16", choices=["none", "bf16"], help="autocast dtype for MLP matmuls")
+ add_launcher_args(parser)
+@@ -67,7 +68,8 @@ os.makedirs(args.log_dir, exist_ok=True)
+ json.dump(vars(args), open(os.path.join(args.log_dir, "args.json"), "w"), indent=2)
+ 
+ kin = G1Kinematics(dev)
+-motion = MotionLib.from_dir(args.motion_dir, kin, dev)
++import glob
++motion = MotionLib(sorted(glob.glob(os.path.join(args.motion_dir, "*.csv"))), kin, dev, src_fps=50.0)
+ mdp = MDP(kin, motion, torch.tensor(default_joint_pos_list(), device=dev))
+ K, Hh, HZ = args.goal_frames, args.hist, args.horizon
+ GOAL_DIM = 73 * K
+@@ -299,7 +301,11 @@ with launch_simulation(sim_cfg, args):
+     t_log = time.time()
+     step_acc = 0.0
+     agg = {"wm": [], "wm8": [], "pi": [], "v": [], "ir": [], "gn": [], "surv": []}
++    policy_budget_start = None
+     for it in range(start_it, args.iterations):
++        if it >= args.wm_only_iters and policy_budget_start is None:
++            policy_budget_start = time.monotonic()
++            print("POLICY_BUDGET_START", flush=True)
+         lr = lr_at(it)
+         for o in (opt_wm, opt_pi, opt_v):
+             for gparam in o.param_groups:
+@@ -338,7 +344,8 @@ with launch_simulation(sim_cfg, args):
+                   f"| sim_r {row[10]:.3f} ep_len {row[11]:.1f} ep_ret {row[12]:.3f} term {term_frac:.2f} | {ips:.2f} it/s", flush=True)  # fmt: skip
+             stats = {k: [] for k in stats}
+             agg = {k: [] for k in agg}
+-        if (it + 1) % args.ckpt_every == 0 or it + 1 == args.iterations:
++        budget_done = policy_budget_start is not None and time.monotonic() - policy_budget_start >= 60 * args.max_policy_minutes
++        if (it + 1) % args.ckpt_every == 0 or it + 1 == args.iterations or budget_done:
+             ck = {"wm": wm.state_dict(), "pi": pi.state_dict(), "critic": critic.state_dict(), "opt_wm": opt_wm.state_dict(),
+                   "opt_pi": opt_pi.state_dict(), "opt_v": opt_v.state_dict(), "iteration": it + 1,
+                   "wall_time": time.time() - t_start, "sim_steps": sim_steps, "args": vars(args),
+@@ -350,3 +357,7 @@ with launch_simulation(sim_cfg, args):
+             path = os.path.join(args.log_dir, f"ckpt_{it + 1:06d}.pt")
+             torch.save(small, path + ".tmp")
+             os.replace(path + ".tmp", path)
++
++        if budget_done:
++            print("BOUNDED_TRAINING_FINISHED", it + 1, flush=True)
++            break

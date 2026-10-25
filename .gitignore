@@ -1,0 +1,7 @@
+.runtime/
+__pycache__/
+*.pyc
+*.pt
+*.whl
+third_party/supermimic_vibed/data/
+third_party/supermimic_vibed/supermimic/train_bounded_backflip.py

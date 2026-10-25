@@ -1,0 +1,108 @@
+{
+  "source": "actual 200 Hz GPU solver contact forces; no calibration fixture",
+  "mass_kg": 33.341143417870626,
+  "sampling_hz": 200.0,
+  "phases": {
+    "reference_preparation_window": {
+      "window_seconds": [
+        1.0,
+        1.5
+      ],
+      "left_right_vertical_impulse_Ns": [
+        73.22158364446834,
+        98.81186209503096
+      ],
+      "absolute_impulse_imbalance_fraction": 0.1487517635920201,
+      "left_right_peak_vertical_force_N": [
+        315.15029191970825,
+        330.47877311706543
+      ],
+      "left_right_contact_fraction": [
+        0.83,
+        0.94
+      ],
+      "excess_leg_asymmetry_rmse_degrees": 2.831842823509361
+    },
+    "reference_takeoff_window": {
+      "window_seconds": [
+        1.5,
+        1.8
+      ],
+      "left_right_vertical_impulse_Ns": [
+        90.96132221728564,
+        81.70820051968097
+      ],
+      "absolute_impulse_imbalance_fraction": 0.053588621494600794,
+      "left_right_peak_vertical_force_N": [
+        577.3217105865479,
+        583.3096370697021
+      ],
+      "left_right_contact_fraction": [
+        0.7166666666666667,
+        0.7166666666666667
+      ],
+      "excess_leg_asymmetry_rmse_degrees": 4.701290393050569
+    },
+    "reference_airborne_window": {
+      "window_seconds": [
+        1.8,
+        2.36
+      ],
+      "left_right_vertical_impulse_Ns": [
+        0.0,
+        0.0
+      ],
+      "absolute_impulse_imbalance_fraction": null,
+      "left_right_peak_vertical_force_N": [
+        0.0,
+        0.0
+      ],
+      "left_right_contact_fraction": [
+        0.0,
+        0.0
+      ],
+      "excess_leg_asymmetry_rmse_degrees": 4.511524144226749
+    },
+    "actual_pre_airborne_window": {
+      "window_seconds": [
+        1.44,
+        1.74
+      ],
+      "left_right_vertical_impulse_Ns": [
+        108.96439680971206,
+        96.49218009199481
+      ],
+      "absolute_impulse_imbalance_fraction": 0.06070487937548049,
+      "left_right_peak_vertical_force_N": [
+        577.3217105865479,
+        583.3096370697021
+      ],
+      "left_right_contact_fraction": [
+        0.9166666666666666,
+        0.9166666666666666
+      ],
+      "excess_leg_asymmetry_rmse_degrees": 3.955822909078146
+    }
+  },
+  "force_sign": "positive Z acts upward on the robot",
+  "contact_threshold_N": 5.0,
+  "selected_actual_airborne_window_seconds": [
+    1.74,
+    2.36
+  ],
+  "summed_contact_vs_constraint_max_error_N": 0.005680084228515625,
+  "left_right_sustained_departure_events_seconds": [
+    [
+      1.7249999999999999,
+      2.65,
+      2.675
+    ],
+    [
+      1.7249999999999999
+    ]
+  ],
+  "left_right_leg_max_torque_limit_ratio": [
+    1.0,
+    1.0
+  ]
+}

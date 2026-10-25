@@ -1,0 +1,13 @@
+{
+  "syntax_all_python": true,
+  "vendored_algorithm_matches_pinned_upstream": true,
+  "training_adapter_matches_original_sha256": "05ecfea1a8300e6c1b0cd02ecff3af23e549bca0f36446a450d15cad796bf165",
+  "motion_rebuild_matches_original_sha256": "0d7dcb9ac79834bec3f3db16b5a0d8e582b71b3854435d09ad3b886631adb007",
+  "portable_evaluator_exit_code": 0,
+  "independent_final_iteration": 9029,
+  "independent_strict_success": true,
+  "max_metric_delta": 0.027664225935268405,
+  "fresh_host_full_install_retested": false,
+  "second_full_training_performed": false,
+  "portable_renderer_exit_code": 0
+}
