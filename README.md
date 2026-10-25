@@ -62,7 +62,7 @@ python3 scripts/build_baseline_adapter.py
 
 正式入口拒绝覆盖已有run；接触力校验和容量smoke必须通过。正常结束自动评测最后的`last.pt`，保存200 Hz力记录、受力图和棋盘格视频。`smoke`仅测试容量，不能当成训练成果。
 
-可选最终权重由本仓库Release提供，**只用于查看/复评本次成果**；从零复现的主训练入口不加载它。大权重不放进Git历史。
+可选最终权重由[本仓库Release](https://github.com/liudi159/supermimic-backflip-5090/releases/tag/v14-baseline-9029)提供，**只用于查看/复评本次成果**；从零复现的主训练入口不加载它。大权重不放进Git历史。
 
 ## 目录与来源
 

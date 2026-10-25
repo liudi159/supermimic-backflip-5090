@@ -16,7 +16,12 @@ sudo apt-get install -y git ffmpeg build-essential libegl1 libgl1 fonts-dejavu-c
 
 ## 2. 固定源码并安装环境
 
-克隆本仓库后进入根目录。默认运行文件写入`.runtime/`；可设置绝对路径`BACKFLIP_WORKDIR`，之后每一步都要保持一致。
+```bash
+git clone https://github.com/liudi159/supermimic-backflip-5090.git
+cd supermimic-backflip-5090
+```
+
+默认运行文件写入`.runtime/`；可设置绝对路径`BACKFLIP_WORKDIR`，之后每一步都要保持一致。
 
 ```bash
 python3 scripts/setup.py
